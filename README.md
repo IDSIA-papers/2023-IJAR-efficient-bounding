@@ -144,8 +144,8 @@ K(vars[]|[]) [0.3874948230439201]
 ## Experiments with the synthetic models
 
 The experiemnts has been conducted with the code  in `experiments/BoundPNS.java`. As an example, let us consider the model
-in `./models/synthetic/random_mc2_n5_mid3_d1000_05_mr098_r10_12.uai`. Then the following command run the experiments with r=10 and
-a maximum number of iterations of 100.
+in `./models/synthetic/random_mc2_n5_mid3_d1000_05_mr098_r10_12.uai`. Then the following command runs EMCC for generating 10 points and
+a maximum number of iterations of 100. The cause and effect are automatically choosen.
 
 ```bash
 java -cp lib/credici.jar experiments/BoundPNS.java -rw -w -x 10 -m 100 -a EMCC --debug --seed 0 ./models/synthetic/random_mc2_n5_mid3_d1000_05_mr098_r10_12.uai
